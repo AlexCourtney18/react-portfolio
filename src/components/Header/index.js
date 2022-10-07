@@ -2,8 +2,17 @@ import React from 'react';
 import Nav from '../Navigation';
 
 
-function Header() {
+function Header(props) {
 
+    const {
+        page = [],
+        setCurrentPage,
+        currentPage,
+        contactSelected,
+        setContactSelected
+    } = props;
+
+    console.log('HEADER props obj:', props);
 
     return (
         <header className='flex-row px-1' style={{ background: "#8DA9c4" }}>
