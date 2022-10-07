@@ -13,23 +13,27 @@ function Nav(props) {
         setContactSelected
     } = props;
 
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentPage.name);
-    }, [currentPage]);
+    // useEffect(() => {
+    //     document.title = capitalizeFirstLetter(currentPage.name);
+    // }, [currentPage]);
 
     return (
         <nav>
             <ul className='flex-row'>
                 <li className='mx-2'>
-                    <a href='#about' onClick={() => setContactSelected(false)}>
-                        About me
-                    </a>
+                    <span onClick={() => setContactSelected(false)}>
+                        About Me
+                    </span>
                 </li>
                 <li className={`mx-2 ${contactSelected && 'navActive'}`}>
                     <span onClick={() => setContactSelected(true)}>Contact</span>
                 </li>
-                
-                ))
+                <li className='mx-2'>
+                    Portfolio
+                </li>
+                <li className='mx-2'>
+                    Resume
+                </li>
             </ul>
         </nav>
     );

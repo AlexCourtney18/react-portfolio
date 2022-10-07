@@ -10,6 +10,9 @@ function Header() {
             <h1 style={{ color: "#0B2545" }}>
                 <a href="/">Alex Courtney</a>
             </h1>
+            <h2>
+                <Nav></Nav>
+            </h2>
         </header>
     )
 }
