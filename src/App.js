@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 import Project from './components/Project';
+import About from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -17,7 +18,13 @@ function App() {
       ></Header>
       <main style={{ backgroundColor: "0b2545" }}>
         <div>
-          <ContactForm></ContactForm>
+        {!contactSelected ? (
+            <>
+              <About></About>
+            </>
+          ) : (
+            <ContactForm></ContactForm>
+          )}
         </div>
       </main>
       <Footer></Footer>
