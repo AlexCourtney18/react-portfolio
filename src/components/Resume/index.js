@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import resumeImage from "../../assets/resume-screenshot.png"
+import resumeImage from "../../assets/resume-screenshot.PNG"
 
 function Resume() {
 
     return (
         <div>
-            <Card style={{ width: "18rem;" }}>
+            <Card style={{ width: "18rem" }}>
                 <Card.Img src={resumeImage} />
                 <Card.Body>
                     <Card.Title>
@@ -15,7 +15,7 @@ function Resume() {
                     <Card.Text>
                         To view or download my resume, please click below.
                     </Card.Text>
-                    <Button style={{ color: "#134074" }}>Resume</Button>
+                    <Button style={{ background: "#134074" }}>Resume</Button>
                 </Card.Body>
 
             </Card>
@@ -23,14 +23,14 @@ function Resume() {
                 <Card.Header>
                     Front-end Proficiencies
                 </Card.Header>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">HTML</li>
-                    <li class="list-group-item">CSS</li>
-                    <li class="list-group-item">JavaScript</li>
-                    <li class="list-group-item">JQuery</li>
-                    <li class="list-group-item">Responsive Design</li>
-                    <li class="list-group-item">React</li>
-                    <li class="list-group-item">Bootstrap</li>
+                <ul className="list-group list-group-flush">
+                    <li className="list-group-item">HTML</li>
+                    <li className="list-group-item">CSS</li>
+                    <li className="list-group-item">JavaScript</li>
+                    <li className="list-group-item">JQuery</li>
+                    <li className="list-group-item">Responsive Design</li>
+                    <li className="list-group-item">React</li>
+                    <li className="list-group-item">Bootstrap</li>
                 </ul>
             </Card>
 
@@ -38,12 +38,12 @@ function Resume() {
                 <Card.Header>
                     Back-end Proficiencies
                 </Card.Header>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">APIs</li>
-                    <li class="list-group-item">Node</li>
-                    <li class="list-group-item">Express</li>
-                    <li class="list-group-item">MySQL, Sequelize</li>
-                    <li class="list-group-item">MongoDB, Mongoose</li>
+                <ul className="list-group list-group-flush">
+                    <li className="list-group-item">APIs</li>
+                    <li className="list-group-item">Node</li>
+                    <li className="list-group-item">Express</li>
+                    <li className="list-group-item">MySQL, Sequelize</li>
+                    <li className="list-group-item">MongoDB, Mongoose</li>
                 </ul>
             </Card>
         </div>

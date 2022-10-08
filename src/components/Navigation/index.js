@@ -13,8 +13,6 @@ function Nav(props) {
         setContactSelected
     } = props;
 
-    console.log('NAV props obj:', props);
-
     // useEffect(() => {
     //     document.title = capitalizeFirstLetter(currentPage.name);
     // }, [currentPage]);

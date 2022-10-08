@@ -4,9 +4,16 @@ import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 import Project from './components/Project';
 import About from './components/About';
+import Resume from './components/Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const [pages] = useState([
+    { name: 'About' },
+    { name: 'Contact' },
+    { name: 'Portfolio'},
+    { name: 'Resume'}
+  ])
 
   const [contactSelected, setContactSelected] = useState(false);
 
@@ -16,11 +23,13 @@ function App() {
       contactSelected={contactSelected}
       setContactSelected={setContactSelected}
       ></Header>
-      <main style={{ backgroundColor: "0b2545" }}>
+      <main style={{ background: "0b2545" }}>
         <div>
         {!contactSelected ? (
             <>
               <About></About>
+              <Project></Project>
+              <Resume></Resume>
             </>
           ) : (
             <ContactForm></ContactForm>
