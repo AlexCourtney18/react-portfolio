@@ -20,7 +20,7 @@ function Header(props) {
                 <a href="/">Alex Courtney</a>
             </h1>
             <h2>
-                <Nav></Nav>
+                <Nav setContactSelected={setContactSelected} contactSelected={contactSelected}></Nav>
             </h2>
         </header>
     )
