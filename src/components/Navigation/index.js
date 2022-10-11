@@ -11,25 +11,29 @@ function Nav(props) {
         pageSelected
     } = props;
 
+    const active = () => {
+        setPageSelected(current => !current);
+    }
+
     return (
         <nav>
             <ul className='flex-row'>
-                <li className='mx-2'>
+                <li className='mx-2' style={{color: pageSelected === 'About' ? 'var(--tertiary)' : ''}}>
                     <span onClick={() => setPageSelected('About')}>
                         About Me
                     </span>
                 </li>
-                <li className={`mx-2 ${pageSelected && 'navActive'}`}>
+                <li className='mx-2' style={{color: pageSelected === 'Contact' ? 'var(--tertiary)' : ''}}>
                     <span onClick={() => setPageSelected('Contact')}>
                         Contact
                     </span>
                 </li>
-                <li className='mx-2'>
+                <li className='mx-2' style={{color: pageSelected === 'Portfolio' ? 'var(--tertiary)' : ''}}>
                     <span onClick={() => setPageSelected('Portfolio')}>
                         Portfolio
                     </span>
                 </li>
-                <li className='mx-2'>
+                <li className='mx-2' style={{color: pageSelected === 'Resume' ? 'var(--tertiary)' : ''}}>
                     <span onClick={() => setPageSelected('Resume')}>
                         Resume
                     </span>
