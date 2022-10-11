@@ -4,6 +4,10 @@ import resumeImage from "../../assets/resume-screenshot.PNG"
 
 function Resume() {
 
+    const openResume = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <div>
             <Card style={{ width: "18rem" }}>
@@ -15,7 +19,7 @@ function Resume() {
                     <Card.Text>
                         To view or download my resume, please click below.
                     </Card.Text>
-                    <Button style={{ background: "#134074" }}>Resume</Button>
+                    <Button style={{ background: "#134074" }} onClick={() => openResume('https://docs.google.com/document/d/1vKrmU_ZgulN3jtH8SumNYrzjr6eDmSFpDuqG7EO13kY/edit?usp=sharing')}>Resume</Button>
                 </Card.Body>
 
             </Card>
