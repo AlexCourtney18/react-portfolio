@@ -10,7 +10,7 @@ function Resume() {
 
     return (
         <div>
-            <Card style={{ width: "18rem" }}>
+            <Card style={{ width: "20rem" }}>
                 <Card.Img src={resumeImage} />
                 <Card.Body>
                     <Card.Title>
