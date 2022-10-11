@@ -26,7 +26,7 @@ function Project({ title }) {
 
     //const currentProjects = projects.filter((project) => project.name === title);
     const [currentProject, setCurrentProject] = useState();
-    console.log(projects);
+    // console.log(projects);
 
     return (
         <div>
@@ -40,7 +40,8 @@ function Project({ title }) {
                         src={require(`../../assets/projects/${i}.png`)}
                         alt={image.name}
                     />
-                    {/* <button>GitHub Repository</button> */}
+                    <button>GitHub Repository</button>
+                    <button className='flex-end'>Deployed Application</button>
                     </div>
                 ))}
             </div>

@@ -246,7 +246,6 @@ textarea {
 
 .img-thumbnail {
   width: 30%;
-  /* height: 300px; */
   margin-bottom: 50px;
   cursor: pointer;
 }
@@ -278,7 +277,7 @@ textarea {
 }
 
 button {
-	background: var(--primary);
+	background: #134074;
 	border: 0;
 	border-radius: 5px;
 	color: #fff;
