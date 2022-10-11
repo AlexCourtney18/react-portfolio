@@ -11,33 +11,33 @@ function App() {
   const [pages] = useState([
     { name: 'About' },
     { name: 'Contact' },
-    { name: 'Portfolio'},
-    { name: 'Resume'}
+    { name: 'Portfolio' },
+    { name: 'Resume' }
   ])
 
-  const [contactSelected, setContactSelected] = useState(false);
+  const [pageSelected, setPageSelected] = useState('About');
 
   return (
     <div style={{ width: "100%" }}>
       <Header
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
+        pageSelected={pageSelected}
+        setPageSelected={setPageSelected}
       ></Header>
       <main style={{ background: "0b2545" }}>
         <div>
-        {!contactSelected ? (
-            <>
-              <About></About>
-              <Project></Project>
-              <Resume></Resume>
-            </>
-          ) : (
+          {pageSelected === 'About' ? (
+            <About></About>
+          ) : pageSelected === 'Portfolio' ? (
+            <Project></Project>
+          ) : pageSelected === 'Contact' ? (
             <ContactForm></ContactForm>
+          ) : (
+            <Resume ></Resume>
           )}
         </div>
-      </main>
+      </main >
       <Footer></Footer>
-    </div>
+    </div >
   );
 }
 

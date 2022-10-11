@@ -6,10 +6,8 @@ function Header(props) {
 
     const {
         page = [],
-        setCurrentPage,
-        currentPage,
-        contactSelected,
-        setContactSelected
+        setPageSelected,
+        pageSelected
     } = props;
 
     return (
@@ -18,7 +16,7 @@ function Header(props) {
                 <a href="/">Alex Courtney</a>
             </h1>
             <h2>
-                <Nav setContactSelected={setContactSelected} contactSelected={contactSelected}></Nav>
+                <Nav setPageSelected={setPageSelected} pageSelected={pageSelected}></Nav>
             </h2>
         </header>
     )

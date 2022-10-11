@@ -7,32 +7,32 @@ function Nav(props) {
 
     const {
         page = [],
-        setCurrentPage,
-        currentPage,
-        contactSelected,
-        setContactSelected
+        setPageSelected,
+        pageSelected
     } = props;
-
-    // useEffect(() => {
-    //     document.title = capitalizeFirstLetter(currentPage.name);
-    // }, [currentPage]);
 
     return (
         <nav>
             <ul className='flex-row'>
                 <li className='mx-2'>
-                    <span onClick={() => setContactSelected(false)}>
+                    <span onClick={() => setPageSelected('About')}>
                         About Me
                     </span>
                 </li>
-                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                    <span onClick={() => setContactSelected(true)}>Contact</span>
+                <li className={`mx-2 ${pageSelected && 'navActive'}`}>
+                    <span onClick={() => setPageSelected('Contact')}>
+                        Contact
+                    </span>
                 </li>
                 <li className='mx-2'>
-                    Portfolio
+                    <span onClick={() => setPageSelected('Portfolio')}>
+                        Portfolio
+                    </span>
                 </li>
                 <li className='mx-2'>
-                    Resume
+                    <span onClick={() => setPageSelected('Resume')}>
+                        Resume
+                    </span>
                 </li>
             </ul>
         </nav>
