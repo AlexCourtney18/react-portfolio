@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Footer } from 'react-bootstrap';
 
 
 function Footer() {
@@ -24,7 +23,6 @@ function Footer() {
                 </li>
             </ul>
             </nav>
-
         </footer>
     )
 }

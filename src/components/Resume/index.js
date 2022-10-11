@@ -9,7 +9,7 @@ function Resume() {
     };
 
     return (
-        <div>
+        <div className='flex-row space-between'>
             <Card style={{ width: "20rem" }}>
                 <Card.Img src={resumeImage} />
                 <Card.Body>
@@ -23,7 +23,7 @@ function Resume() {
                 </Card.Body>
 
             </Card>
-            <Card>
+            <Card style={{ color: "#134074" }}>
                 <Card.Header>
                     Front-end Proficiencies
                 </Card.Header>
@@ -38,7 +38,7 @@ function Resume() {
                 </ul>
             </Card>
 
-            <Card>
+            <Card style={{ color: "#134074" }}>
                 <Card.Header>
                     Back-end Proficiencies
                 </Card.Header>

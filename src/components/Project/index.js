@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-function Project({ title }) {
+function Project() {
 
     const [projects] = useState([
         {
@@ -44,14 +44,10 @@ function Project({ title }) {
         window.open(url, '_blank', 'noopener,noreferrer');
     };
 
-    //const currentProjects = projects.filter((project) => project.name === title);
-    const [currentProject, setCurrentProject] = useState();
-     console.log(projects);
-
     return (
         <div>
-            <h1>
-                PROJECTS!
+            <h1 style={{ color: "#134074" }}>
+                Deployed Projects
             </h1>
             <div className='flex-row'>
                 {projects.map((image, i) => (
@@ -61,8 +57,10 @@ function Project({ title }) {
                         src={require(`../../assets/projects/${i}.png`)}
                         alt={image.name}
                     />
+                    <div className='flex-row space-between'>
                     <button onClick={() => openRepo(`${image.repo}`)}>GitHub Repository</button>
                     <button onClick={() => openDeployed(`${image.deployed}`)}>Deployed Application</button>
+                    </div>
                     </div>
                 ))}
             </div>
