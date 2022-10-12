@@ -13,7 +13,7 @@ function Footer() {
             <nav>
             <ul className='flex-row'>
                 <li className='mx-2'>
-                <button onClick={() => openSite('https://github.com/AlexCourtney18')}>GitHub Repository</button>
+                <button onClick={() => openSite('https://github.com/AlexCourtney18')}>GitHub Profile</button>
                 </li>
                 <li className='mx-2'>
                 <button onClick={() => openSite('https://www.linkedin.com/in/alex-courtney-b90106164/')}>LinkedIn Profile</button>
