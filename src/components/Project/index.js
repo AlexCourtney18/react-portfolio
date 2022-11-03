@@ -20,9 +20,9 @@ function Project() {
             deployed: 'https://protected-sea-60494.herokuapp.com/'
         },
         {
-            name: 'Note Taker',
-            repo: 'https://github.com/AlexCourtney18/note-taker',
-            deployed: 'https://intense-fortress-40157.herokuapp.com/'
+            name: 'Style Buddy',
+            repo: 'https://github.com/samvrny/style-buddy',
+            deployed: 'https://style-buddy22.herokuapp.com/'
         },
         {
             name: 'Text Editor',
