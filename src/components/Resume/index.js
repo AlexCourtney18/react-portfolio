@@ -19,7 +19,7 @@ function Resume() {
                     <Card.Text>
                         To view or download my resume, please click below.
                     </Card.Text>
-                    <Button style={{ background: "#134074" }} onClick={() => openResume('https://docs.google.com/document/d/1vKrmU_ZgulN3jtH8SumNYrzjr6eDmSFpDuqG7EO13kY/edit?usp=sharing')}>Resume</Button>
+                    <Button style={{ background: "#134074" }} onClick={() => openResume('https://drive.google.com/file/d/19KZGa9ah_MecQmoLD28i0_xskrwmztIB/view?usp=sharing')}>Resume</Button>
                 </Card.Body>
 
             </Card>
